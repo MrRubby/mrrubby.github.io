@@ -1,249 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/favicon.png"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Fully customizable verification and moderation bot with detailed logging and protection systems."
+    />
+    <meta name="author" content="Marco'S" />
+    <meta
+      property="og:image"
+      content="./images/favicon.png"
+    />
+    <meta property="og:url" content="https://mrrubby.github.io/marco/index.html" />
+    <meta name="theme-color" content="#0000FF" />
+    <title>
+      Discord Marco'S
+    </title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe5629e38b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <title>Marco'S Bot</title>
-</head>
-
-<body>
-
-    <!-- Navbar -->
-
-    <div class="navbar navbar-expand-md bg-dark navbar-dark">
-        <div class="container">
-            <a href="" class="navbar-brand text-info">Marco'S Bot</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
-                    class="navbar-toggler-icon"></span></button>
-
-            <div class="collapse navbar-collapse" id="mainmenu">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="#Features" class="nav-link">Özellikler</a></li>
-                    <li class="nav-item"><a href="#Statics" class="nav-link">İstatistik</a></li>
-                    <li class="nav-item"><a href="#FAQ" class="nav-link">FAQ</a></li>
-                    <li class="nav-item"><a href="./pages/commands.html" class="nav-link">Komutlar</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Linkler</a>
-                        <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
-                            <li><a class="dropdown-item text-muted" href="https://discord.com/oauth2/authorize?client_id=580189198250803201&permissions=8&scope=bot%20applications.commands">Davet</a></li>
-                            <li><a class="dropdown-item text-muted" href="https://mrrubby.github.io">Developer</a></li>
-                            <li><a class="dropdown-item text-muted" href="https://discord.com/invite/y4mPbWjTTh">Destek Sunucusu</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <li class="navbar-nav nav-item"><a href="" class="btn btn-outline-info">Login</a></li>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Info -->
-
-
-    <section class="bg-dark text-light text-center py-5">
-        <div class="container">
-            <div class="d-flex">
-                <div>
-                    <h1><span class="text-info">Marco'S</span> Bot</h1>
-                    <p>Marco'S Bot, sizi botların geri kalanından ve sahip olduğunuz her şeyden ayıran entegre bir sisteme sahiptir.</p>
-                    <a class="btn btn-info" href="https://discord.com/oauth2/authorize?client_id=580189198250803201&permissions=8&scope=bot%20applications.commands">Botu Davet Et</a>
-                    <a class="m-2 btn btn-light" href="https://discord.com/invite/y4mPbWjTTh">Destek Sunucusu</a>
-                </div>
-                <img class="img-fluid w-50" src="./img/ArisBot.svg" alt="">
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Features -->
-
-
-    <section  id="Features" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">
-                Özellikler
-            </h2>
-            <div class="row text-center">
-                <div class="col-sm">
-                    <div class="card bg-dark text-light mb-3">
-                        <div class="h1 mt-3">
-                            <i class="bi bi-clock-history"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-info">Kolay Kullanım</h4>
-                            <p class="card-text">Slash command ve ayarlanabilir özellikler sayesinde oldukça kolay kullanım sağlar.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card bg-dark text-light mb-3">
-                        <div class="h1 mt-3">
-                            <i class="bi bi-capslock-fill"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-info">24/7 Online</h4>
-                            <p class="card-text">Yerel sağlayıcımız sayesinde 24/7 online sisteme sahiptir. Ping değerlerinin denge saylayabilmesi için sistem 12 saat aralıklarla yenilenmektedir.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card bg-dark text-light mb-3">
-                        <div class="h1 mt-3">
-                            <i class="bi bi-folder2-open"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-info">Kapalı Kaynak</h4>
-                            <p class="card-text">Uygulamamıza ait kaynak dosyaları tamamen kapalı ve geliştirici ekibe açıktır. Geliştirici ekibi haricinde herhangi kimse verilere erişim sağlayamaz.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Statics -->
-
-
-    <section id="Statics" class="py-5 bg-dark text-light">
-        <div class="container">
-            <div class="py-2 text-center">
-                <h2>İstatistik:</h2>
-            </div>
-            <div class="row align-items-center justify-content-center text-center -5">
-                <div class="col">
-                    <img src="./img/statics.svg" alt="" class="img-fluid d-none d-md-block">
-                </div>
-                <div class="col-sm p-5 h1">
-                    <i class="bi bi-hdd-stack text-primary"></i>
-                    <h5>13</h5>
-                    <h5>Sunucu</h5>
-                </div>
-                <div class="col-sm p-5 h1">
-                    <i class="bi bi bi-people-fill text-primary"></i>
-                    <h5>22,621</h5>
-                    <h5>Kullanıcı</h5>
-                </div>
-                <div class="col-sm p-5 h1">
-                    <i class="bi bi bi-hash text-primary"></i>
-                    <h5>860</h5>
-                    <h5>Kanal</h5>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- FAQ -->
-
-    <section id="FAQ" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-3">
-                Sıkça Sorulan Sorular
-            </h2>
-            <div class="accordion accordion-flush" id="your-faq">
-                <div class="accordion-item">
-                    <h5 class="accordion-header" id="qusetion-1">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-1">
-                            Marco'S Çevrimdışı
-                        </button>
-                    </h5>
-                    <div class="accordion-collapse collapse p-3" id="answer-1" data-bs-parent="#your-faq">
-                        Sistemin çevrimdışı olmasının sebebi genel bir bakım olabilir veya 12 saatte bir yapılan yenileme işleminden kaynaklı olabilir. Detaylı bilgi almak için destek sunucusuna katılabilirsiniz. 
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h5 class="accordion-header" id="qusetion-2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-2">
-                            Rolleri Yönetme İzni Eksik
-                        </button>
-                    </h5>
-                    <div class="accordion-collapse collapse p-3" id="answer-2" data-bs-parent="#your-faq">
-                        Sistemde bulunan bazı sistemlerin kullanılabilmesi için Marco'S rolünün, Sunucu ayarları > Roller bölümünde üst düzeylerde bulunması gerekmektedir.
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h5 class="accordion-header" id="qusetion-3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-3">
-                            Eğik Çizgi Komutları Çalışmıyor
-                        </button>
-                    </h5>
-                    <div class="accordion-collapse collapse p-3" id="answer-3" data-bs-parent="#your-faq">
-                        Bu hatanın sebebi genel olarak sistemin yeterli izne sahip olmamasıdır. Sistemi sunucunuzdan atıp, sitemizde bulunan "Botu Davet Et" butonunu kullanarak tekrar ekleyiniz.
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h5 class="accordion-header" id="qusetion-4">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer-4">
-                            Komut Ön Ekini Nasıl Öğrenebilirim?
-                        </button>
-                    </h5>
-                    <div class="accordion-collapse collapse p-3" id="answer-4" data-bs-parent="#your-faq">
-                        Sistemlerimizde Discord.js v14 sürümü ve Discord gereksinimlerinden dolayı ön eki kullanılmamaktadır.Ön ek yerine tamamen "/" Slash Command kullanılmaktadır.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- footer -->
-
-    <div class="footer-clean bg-dark">
-    <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Hızlı Erişim</h3>
-                    <ul>
-                        <li><a href="#Features">Özellikler</a></li>
-                        <li><a href="#Statics">İstatistik</a></li>
-                        <li><a href="#FAQ">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Hakkında</h3>
-                    <ul>
-                        <li><a href="./pages/commands.html">Komutlar</a></li>
-                        <li><a href="#">Ekip</a></li>
-                        <li><a href="#">Lisans</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Linkler</h3>
-                    <ul>
-                        <li><a href="https://discord.com/invite/y4mPbWjTTh">Destek Sunucusu</a></li>
-                        <li><a href="https://discord.com/oauth2/authorize?client_id=580189198250803201&permissions=8&scope=bot%20applications.commands">Botu Davet Et</a></li>
-                        <li><a href="https://mrrubby.github.io/">Developer</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 item social"><a href="https://discord.com/invite/y4mPbWjTTh"><ion-icon name="logo-discord"></ion-icon></a><a href="#"><ion-icon name="logo-facebook"></ion-icon></a><a href="#"><ion-icon name="logo-twitter"></ion-icon></a><a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                    <p class="copyright">Marco'S Bot © 2023</p>
-                </div>
-            </div>
-        </div>
-        <div class="page-footer font-small text-light mt-5">
-        <div class="footer-copyright text-center">Made with 💖 by
-            <a href="https://github.com/MrRubby/">MrRubby</a>
-            © 2023 Copyright
+  <body oncontextmenu="return false">
+    <header class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+        >
+          <img
+            src="./images/favicon.png"
+            width="40"
+            height="40"
+          />
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+        <a href="./index.html" class="mr-5 hover:text-white">Home</a>
+        <a href="./index.html" class="mr-5 hover:text-white">Commands</a>
+        <a href="./changelogs/index.html" class="mr-5 hover:text-white">Change Logs</a>
+        <a href="./invite/index.html" class="mr-5 hover:text-white">Invite Marco'S</a>
+        <a href="./support/index.html" class="mr-5 hover:text-white">Support Server</a>
+        <a href="./privacy/index.html" class="mr-5 hover:text-white">Privacy Policy</a>
+        <a href="./termsofservice/index.html" class="mr-5 hover:text-white">Terms of Service</a>
+        </nav>
+      </div>
+    </header>
+    <hr />
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+      >
+        <img
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+          alt="hero"
+          src="./images/favicon.png"
+        />
+        <div class="text-center lg:w-2/3 w-full">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+          >
+            Marco'S
+          </h1>
+          <p class="leading-relaxed mb-8">
+            Fully customizable verification and moderation bot with detailed logging and protection systems.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+              <a href="./invite/index.html">Add To Discord</a>
+            </button>
+            <button
+              class="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            >
+              <a href="./support/index.html">Support Server</a>
+            </button>
           </div>
         </div>
+      </div>
+    </section>
+    <hr />
+    <section class="text-gray-400 body-font bg-gray-900">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"
+            >
+              Features
+            </h1>
+            <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://cdn.glitch.com/0fb8a174-b679-4edc-8188-8ec3f09dd7da%2Fee71b2954fb4-article-190705-ssl-config-body.jpg?v=1622693344066"
+                alt="content"
+              />
+              <h2 class="text-lg text-indigo-400 font-medium title-font mb-4">
+                Configurable Features
+              </h2>
+              <p class="leading-relaxed text-base">
+                You can customise Infinity to work according to your server!
+                From Autorole to Welcomer, Logging to Reaction Roles, Custom
+                Prefix to Custom Commands, we cover it all!
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://cdn.glitch.com/0fb8a174-b679-4edc-8188-8ec3f09dd7da%2FAI-Content-Moderation.jpg?v=1622693798767"
+                alt="content"
+              />
+              <h2 class="text-lg text-indigo-400 font-medium title-font mb-4">
+                Moderation Commands
+              </h2>
+              <p class="leading-relaxed text-base">
+                Marco'S includes alot of Moderation Commands as well. Use them to keep your server clean and keep the discipline maintained!
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://cdn.glitch.com/0fb8a174-b679-4edc-8188-8ec3f09dd7da%2Fpg_datadictedgo_112619.jpg?v=1622788933711"
+                alt="content"
+              />
+              <h2 class="text-lg text-indigo-400 font-medium title-font mb-4">
+                Information Commands
+              </h2>
+              <p class="leading-relaxed text-base">
+                Marco'S has some Information Commands too, so you can have some
+                info relating a user, server, our bot or even emojis!
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://cdn.glitch.com/0fb8a174-b679-4edc-8188-8ec3f09dd7da%2FUtility-Software_Feature.png?v=1622789159862"
+                alt="content"
+              />
+              <h2 class="text-lg text-indigo-400 font-medium title-font mb-4">
+                Utility Commands
+              </h2>
+              <p class="leading-relaxed text-base">
+                Marco'S has tons of utilites, which are going to be very useful for your Discord Server. From Creating Channels to Deleting Channels, Creating Roles to Deleting Roles, Infinity has them all!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="text-gray-400 bg-gray-900 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 17l4 4 4-4m-4-5v9"></path>
+                <path
+                  d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"
+                ></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-white">25+</h2>
+              <p class="leading-relaxed">Commands</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-white">30k+</h2>
+              <p class="leading-relaxed">Users</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-white">25+</h2>
+              <p class="leading-relaxed">Servers</p>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="border-2 border-gray-800 px-4 py-6 rounded-lg">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="text-indigo-400 w-12 h-12 mb-3 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"
+                ></path>
+              </svg>
+              <h2 class="title-font font-medium text-3xl text-white">1k+</h2>
+              <p class="leading-relaxed">Channels</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <footer class="text-gray-400 bg-gray-900 body-font">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+        >
+          <img
+            src="./images/favicon.png"
+            width="40"
+            height="40"
+          />
+          <span class="ml-3 text-xl">Marco'S</span>
+        </a>
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          Copyright © 2021. All Rights Reserved. @MarcoS-Bot-Team
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a
+            href="https://top.gg/bot/580189198250803201"
+            class="ml-3 text-gray-400"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+        </span>
+      </div>
     </footer>
-</div>
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</body>
-
+    <noscript>
+      Please enable JavaScript in your browser, to view this page properly!
+    </noscript>
+  </body>
 </html>
